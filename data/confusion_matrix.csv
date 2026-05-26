@@ -1,0 +1,14 @@
+Actual\Predicted,Forest,Fraser River,Pond,River,Agricultural,Industrial,Downtown,Suburban,Marsh,
+Forest,1900,1,0,1,0,0,0,3,1,0.9968520462
+Fraser River,8,553,0,0,0,4,0,0,12,0.9584055459
+Pond,0,1,92,0,6,0,1,0,0,0.92
+River,0,0,0,30,0,0,0,0,0,1
+Agricultural,2,0,0,0,2023,5,0,6,0,0.9936149312
+Industrial,2,0,0,0,26,495,14,33,5,0.8608695652
+Downtown,0,0,0,0,0,37,127,27,0,0.664921466
+Suburban,9,0,0,0,27,29,6,947,0,0.9302554028
+Marsh,0,15,0,0,0,8,1,0,149,0.8612716763
+,,,,,,,,,,
+accuracy,0.9561,,,,,,,,,
+,,,,,,,,,,
+kappa,0.9454,,,,,,,,,

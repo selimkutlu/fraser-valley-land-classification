@@ -1,0 +1,136 @@
+# ===========================================
+# .gitignore — Fraser Valley Land Classification
+# ===========================================
+
+# -----------------------
+# OS-generated files
+# -----------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# -----------------------
+# Editor / IDE files
+# -----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# -----------------------
+# Large geospatial outputs
+# -----------------------
+# Avoid committing large GeoTIFFs — store thumbnails only,
+# or link to external storage (Google Drive, Zenodo, etc.)
+*.tif
+*.tiff
+*.geotiff
+*.img
+*.hdr
+*.bsq
+*.bil
+*.bip
+
+# Shapefile auxiliary files (if you commit one .shp, you'll
+# need the whole bundle — uncomment selectively if needed)
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qix
+*.sbn
+*.sbx
+
+# Other large geospatial formats
+*.nc
+*.hdf
+*.h5
+*.gpkg-journal
+
+# -----------------------
+# Generated reports / temp
+# -----------------------
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.bbl
+*.blg
+
+# -----------------------
+# Python (in case of future notebooks)
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# -----------------------
+# Node.js (in case any tooling is added later)
+# -----------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# -----------------------
+# Credentials & secrets
+# -----------------------
+# Never commit GEE service account keys or Drive credentials
+*.json
+!package.json
+!**/colors/*.json
+!**/config/*.json
+.env
+.env.local
+.env.*.local
+credentials/
+secrets/
+private_key.pem
+
+# -----------------------
+# Working / archive files
+# -----------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+~$*
+*.bak
+*.backup
+*.tmp
+.temp/
+
+# -----------------------
+# Project-specific
+# -----------------------
+# Local-only scratch directories
+/scratch/
+/local/
+/personal/
+
+# Don't ignore the README, LICENSE, or main script
+!README.md
+!LICENSE
+!script/*.js
