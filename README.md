@@ -1,4 +1,4 @@
-# GEE for Agricultural Land Use Classification
+# A Tale of Two Valleys
 
 **Mapping agricultural land loss in the Fraser Valley through cross-border classification, 2000–2025.**
 
@@ -24,7 +24,7 @@ A 25-year remote sensing analysis comparing how agricultural land has changed ar
 - **SRTM Global 1 arc-second DEM** for slope derivation
 - All data accessed through **Google Earth Engine**
 
-### Pipeline
+### Methods
 1. **Cloud masking** using Landsat Collection 2 QA_PIXEL bitmask (cloud + cloud shadow, per-pixel)
 2. **Surface reflectance scaling** via the standard Collection 2 transformation (USGS, 2024)
 3. **Dual-season median compositing**:
@@ -64,13 +64,16 @@ fraser-valley-land-classification/
 │   └── fraser_valley_classification.js        # Main GEE script
 ├── paper/
 │   ├── EEPS1330_FinalPaper_Kutlu.pdf          # Final research paper
-│   └── figures/                               # Paper figures
 ├── data/
-│   ├── area_stats.csv                         # Time series area data
-│   └── confusion_matrix.csv                   # 9-class accuracy matrix
-└── outputs/
-    ├── classifications/                       # PNG thumbnails of 3-class maps
-    └── true_color/                            # PNG thumbnails of RGB composites
+│   ├── area_timeseries.csv                    # Time series area data
+│   ├── confusion_matrix.csv                   # 9-class accuracy matrix
+│   └── graphs/                                # Time series graphs for Chilliwack and Lynden (2000-2025)
+└── outputs/ 
+│   ├── Chilliwack_2000.png                    # 3-class classification for Chilliwack, BC, 2000
+│   ├── Chilliwack_2025.png                    # 3-class classification for Chilliwack, BC, 2025
+│   ├── Lynden_2000.png                        # 3-class classification for Lynden, WA, 2000
+│   ├── Lynden_2025.png                        # 3-class classification for Lynden, WA, 2025
+│   └── outputs_link.txt                       # Link to Google Drive folder with 9-class and 3-class classifications, and true colour images.
 ```
 
 ---
@@ -98,13 +101,16 @@ fraser-valley-land-classification/
 ## Results Preview
 
 ### 3-class classification: Chilliwack, BC (2000 vs. 2025)
-*(insert side-by-side classification images)*
+![Chilliwack, BC - 2000](outputs/Chilliwack_2000.png)
+![Chilliwack, BC - 2025](outputs/Chilliwack_2025.png)
 
 ### 3-class classification: Lynden, WA (2000 vs. 2025)
-*(insert side-by-side classification images)*
+![Lynden, BC - 2000](outputs/Lynden_2000.png)
+![Lynden, BC - 2025](outputs/Lynden_2025.png)
 
 ### Agricultural area over time
-*(insert line chart)*
+![Chilliwack time series graph](data/graphs/Land%20Cover%20Classification%20Areas%20in%20Chilliwack%20(2000-2025).png)
+![Lynden time series graph](data/graphs/Land%20Cover%20Classification%20Areas%20in%20Lynden%20(2000-2025).png)
 
 ### Confusion matrix summary
 | Metric | Value |
