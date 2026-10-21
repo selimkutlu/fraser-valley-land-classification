@@ -45,7 +45,7 @@ A 25-year remote sensing analysis comparing how agricultural land has changed ar
 
 ---
 
-## Tech Stack
+## Resources
 
 - **Google Earth Engine** (JavaScript API) — primary analysis platform
 - **Landsat Collection 2 Level-2 Surface Reflectance** — atmospheric-corrected imagery
