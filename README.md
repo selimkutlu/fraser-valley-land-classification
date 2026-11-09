@@ -178,11 +178,9 @@ Full bibliography available in the paper PDF.
 ## Author
 
 **Selim Kutlu** — Brown University / RISD Dual Degree Program, Class of 2029
-B.A. Computer Science | B.F.A. Printmaking
+B.A. Computer Science | B.F.A. Graphic Design
 
 Interested in: geospatial machine learning, climate and environmental data visualization, applied remote sensing for sustainability and land use change.
-
-🌐 [LinkedIn](https://www.linkedin.com/in/selim-kutlu-277b1b22a/)
 
 ---
 
