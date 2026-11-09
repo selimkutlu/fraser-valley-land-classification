@@ -1,5 +1,3 @@
-# A Tale of Two Valleys
-
 **Mapping agricultural land loss in the Fraser Valley through cross-border classification, 2000–2025.**
 
 A 25-year remote sensing analysis comparing how agricultural land has changed around Chilliwack, BC and Lynden, WA — two similar agricultural towns on opposite sides of the 49th parallel, operating under different farmland protection regimes (BC's Agricultural Land Reserve vs. Washington's Growth Management Act).
